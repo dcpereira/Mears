@@ -1,0 +1,308 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+
+
+#logo{
+	position:relative;
+	left:-10px;
+	top:5px;	
+}
+
+body{
+	width: 920px;
+	margin: auto;
+	font-size:12px;
+	font:Verdana;
+	font-family:Verdana, Verdana, Geneva, sans-serif;
+	color:DimGrey;
+}
+
+#main_slider_background_border{
+	position: relative;
+	margin:  auto;
+	width: 900px;
+	padding: 8px;
+ 
+/*round box*/
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+     -moz-border-radius: 5px; /* FF1-3.6 */
+          border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+/*box shadow*/
+-webkit-box-shadow: 0px 0px 4px 0px black; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow: 0px 0px 4px 0px black; /* FF3.5 - 3.6 */
+        box-shadow: 0px 0px 4px 0px black; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+
+/* font-family: "goudy-bookletter-1911-1","goudy-bookletter-1911-2","Baskerville","Georgia",serif;
+ font-size: 16px;
+ overflow: hidden;
+ padding: 20px;
+ z-index: 2;*/
+}
+
+#header{
+	width: 900px;
+	margin: 10px auto;
+	padding: 5px;
+	height:150px;
+}
+
+/* ----------------------------------*/
+/* -------------- menu --------------*/
+/* ----------------------------------*/
+
+#top_menu_container{
+	position:relative;
+	top:-28px;
+	right:-230px;
+	width: 700px;
+	height:60px;
+}
+
+/* Home */
+#swap-home{
+	background-color:red;
+	width: 100px;
+	height:30px;
+	position:relative; 
+	background: asset-url("menu_grey/menu_home.jpg", image) no-repeat;
+	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+}
+
+#swap-home:hover {
+	width: 100px;
+	height:30px;
+	position:relative;
+	background: asset-url("menu_orange/home_orange_menu.jpg", image) no-repeat;
+}
+
+/* About Us */
+#swap-about{
+	background-color:red;
+	width: 150px;
+	height:30px;
+	right:17px;
+	position:relative;
+	background: asset-url("menu_grey/about_us_menu.jpg", image) no-repeat;
+	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+}
+
+#swap-about:hover {
+	width: 150px;
+	height:30px;
+	position:relative;
+	right:17px;
+	background: asset-url("menu_orange/about_us_orange_menu.jpg", image) no-repeat;
+}
+
+/* Services */
+#swap-services{
+	background-color:red;
+	width: 150px;
+	height:30px;
+	position:relative;
+	right:21px;
+	background: asset-url("menu_grey/services_menu.jpg", image) no-repeat;
+	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+}
+
+#swap-services:hover {
+	width: 150px;
+	height:30px;
+	position:relative;
+	right:21px;
+	background: asset-url("menu_orange/services_orange_menu.jpg", image) no-repeat;
+}
+
+
+/* Services */
+#swap-contact{
+	background-color:red;
+	width: 150px;
+	height:30px;
+	position:relative;
+	top:10px;
+	right:22px;	
+	background: asset-url("menu_grey/contact_us_menu.jpg", image) no-repeat;
+	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+}
+
+#swap-contact:hover {
+	width: 150px;
+	height:30px;
+	position:relative;
+	top:10px;
+	right:22px;
+	background: asset-url("menu_orange/contact_us_orange_menu.jpg", image) no-repeat;
+}
+
+/*footer*/
+
+.line_across_bottom_2_footer{
+	position:relative;
+	bottom:-40px;
+	left:10px;
+}
+
+#social_network_links{
+	position:relative;
+	top:5px;
+	left:490px;	
+	width:500px;
+}
+
+
+.connect_heading{
+	position:relative;
+	top:30px;	
+	left:620px;
+}
+
+.contacts_footer{
+	position:relative;
+	top:47px;
+	left:120px;
+}
+
+/*pic*/
+.telepphone_footer{
+	position:relative;
+	top:0px;
+	left:-250px;	
+}
+
+/*pic*/
+.email_footer{
+	position:relative;
+	top:0px;
+	left:-250px;
+}
+
+#contact_number_text{
+	position:relative;
+	top:-10px;
+	left:-250px;
+	font-size:14px;
+}
+
+#email_text{
+	position:relative;
+	top:-5px;
+	left:-244px;
+	font-size:14px;
+}
+
+
+/*---- company details ----*/
+.company_details{
+	position:relative;
+	top:30px;
+	left:20px;
+}
+
+/*drop down*/
+.drop_menu ul {
+  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.drop_menu ul li {
+  display: block;
+  position: relative;
+  float: left;
+	}
+li ul { display: none; }
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: DimGrey;
+  border-top: 1px solid white;
+  padding: 5px 15px 5px 15px;
+  background: #2C5463;
+  margin-left: 1px;
+  white-space: nowrap;
+}
+.drop_menu ul li a:hover { background: #617F8A; }
+li:hover ul {
+  display: block;
+  position: absolute;
+	top:30px;
+	right:10px;
+	z-index:100;
+}
+
+.drop_menu li:hover li {
+  float: none;
+  font-size: 13px;
+}
+.drop_menu li:hover a { background: white; }
+.drop_menu li:hover li a:hover { background: orange; }
+
+
+footer_contact_us{
+	position:relative;
+	left:200px;
+}
+
+/* about us form*/
+.about_us{
+	width:800px;
+	height:530px;
+	overflow:auto;
+	
+}
+
+#enviro_content{
+	width:800px;
+	height:10px;
+}
+
+.heading{
+	font-family:Verdana, Verdana, Geneva, sans-serif;
+	
+	font-size:20px;
+	font-style:bold;
+	
+}
+
+/*legal*/
+#legal{
+	position:relative;
+	left:230px;
+	
+}
+
+
+/* Generic moves */
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+.clear_right{
+	clear:right;
+}
+
+clear_left{
+	clear:left;
+}

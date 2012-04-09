@@ -1,0 +1,45 @@
+.navlist
+{
+margin-left: 0;
+padding-left: 0;
+list-style: none;
+}
+
+.navlist li
+{
+	width:430px;
+padding-left:20px;
+padding-right: 10px;
+background-image: url(bullet.png);
+background-repeat: no-repeat;
+/*background-position: -.5em;
+*/}
+
+
+#service_page_links{
+	width:800px;
+	position:relative;
+	left:60px;
+}
+
+#enviro_content{
+	position:relative;
+	top:60px;
+}
+
+#services_content{
+	position:relative;
+	top:20px;
+}
+
+.spacer{
+	position:relative;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.back_to_top{
+	position:relative;
+	padding:10px;
+	
+}

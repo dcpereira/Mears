@@ -1,0 +1,95 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#home_intro{
+	padding:5px;
+}
+
+.line_across{
+	position:relative;
+	top:10px;
+	left:10px;
+}
+
+.line_across_bottom{
+	position:relative;
+	top:20px;
+	left:10px;
+}
+
+#home_intro{
+	position:relative;
+	top:10px;
+	
+}
+
+/* home headings with icons */
+#headings_home{
+	height:84px;
+	
+}
+
+.deisgn_home_heading{
+	position:relative;
+	top:45px;
+	left:1px;
+}
+
+.office_furniture_home_heading{
+	position:relative;
+	top:45px;
+	left:290px;
+	
+}
+
+.fitout_home_heading{
+	position:relative;
+	top:45px;
+	left:145px;
+}
+
+/* lines down betweeb headings*/
+.line_down1{
+	position:relative;
+	top:33px;
+	right:315px;	
+	
+}
+
+.line_down2{
+	position:relative;
+	top:33px;
+	right:615px;	
+}
+/* -------------------- */
+
+/* heding-home content */
+
+.design_home_content{
+	position:relative;
+	top:20px;
+	padding:5px;
+	width:265px;
+	
+}
+
+.fitout_home_content{
+	position:relative;
+	top:20px;
+	left:23px;
+	padding:5px;
+	width:265px;
+}
+
+.chairs_pic{
+	position:relative;
+	top:40px;
+	left:52px;
+
+	
+}
+
+

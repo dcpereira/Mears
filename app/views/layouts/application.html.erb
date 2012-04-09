@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Mears</title>
+  <%= stylesheet_link_tag  "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id='header'>
+		<a href='/' id='logo'><%= image_tag "logo.png",  :size => "198x143", :alt => "logo" %></a>
+		<div id='top_menu_container' class='drop_menu' >
+			<a href='#contact_us_form' id='swap-contact' class='right'></a>
+				<ul id="menu" class='right'>
+				  <li id='swap-services' class='right'>
+				    <ul class='.drop_menu'>
+					    <li><a href="/home/services#design">Design</a></li>
+					    <li><a href="/home/services#fit_out">Fitout</a></li>
+					    <li><a href="/home/services#refurbishments">Refurbishments</a></li>
+					    <li><a href="/home/services#relocations">Relocations</a></li>
+					    <li><a href="/home/services#dilapidations">Dilapidations</a></li>
+					    <li><a href="/home/services#leasing">Leasing</a></li>
+				    </ul>
+				  </li>
+				</ul>
+			<a href='#about_us_form' id='swap-about' class='right' ></a>
+			<a href='/' id='swap-home' class='right'></a>
+		</div>
+	</div>
+	<div id='main_slider_background_border' >
+		<div id="pic_slide" class="pics " style="position: relative;">
+		<%= image_tag "image1.jpg",  :size => "900x300", :alt => "Image1", :class => 'image 1' %>
+		<%= image_tag "image2.jpg",   :size => "900x300", :alt => "Image2" %>
+		</div>
+	</div>
+	
+	<!-- about us content for fancy box -->
+	<div  style="display:none">
+		<div id='about_us_form' class='about_us' >
+			<a href='/' id='logo'><%= image_tag "logo_about_us.png",:alt => "logo", :style=>"position:relative; top:-10px; left:5px" %></a>
+			<%= image_tag "about_us_main.png", :alt => "logo", :style=>"position:relative; top:-10px; left:160px" %>
+			<div id='content'>
+				<br/>
+				Mears Office Interiors are Interior Designers that offers a distinctly creative perspective on commercial Interior Design. The Team at Mears draws on their vast years of experience and has a ‘hands on’ and interactive approach to interior design on a corporate level. Making sure stakeholders are involved in each step of the project from conceptual designs, to working plans and final updates or extras. <br/><br/>We pride ourselves in delivering a top quality service on a bespoke level as all clients’ needs are unique. Whether you are about to create a new working space, re-invent a current space or just refurnish your offices – Mears can help you. For more information please feel free to browse our site or contact us for a free quote or for more information.
+			</div>
+			<%= image_tag "environment_world.png", :class=>'left', :size => '45x45' ,:alt => "logo", :style=>"position:relative; top:40px; left:260px" %>
+			<%= image_tag "about_us_environment.png", :alt => "logo", :style=>"position:relative; top:40px; left:270px" %>
+			<div id='enviro_content'>
+				Mears Office Interiors is fully committed to protecting the environment and recognises the role it can play in
+				influencing the choices its customers make in reducing their own environmental impact.
+				Working to pursue sustainability in the built environment is an important facet of our business impacting both the
+				 advice we give and the way we work. 
+			</div>
+			<div style='position:relative; top:150px; right:8px' class='right'>
+				Copyright &#169; 2012 Mears Office Interiors
+			</div>
+		</div>
+	</div>
+	
+	<div style='display:none'>
+		<div id='contact_us_form'>
+				<a href='/' id='logo'><%= image_tag "logo_about_us.png",:alt => "", :size => '80x80',:style=>"position:relative; top:-10px; left:5px" %></a>
+				<%= image_tag "contact_us_pop_head.png", :alt => "logo", :style=>"position:relative; top:-15px; left:0px" %>
+				
+				
+				<div style="position:relative; left:100px; width=300">
+					<!-- contact numbers -->
+					<div class='heading' >
+						<%= image_tag "telephone_yellow.png", :size => "25x25",  :alt => "", :class => ' left' %>
+						&nbsp;Call us:
+					</div>
+						<div style='position:relative; top:5px; left:37px'>
+							Sales: 0125 888 796<br/>
+							Enquiries: 0125 888 796
+						</div>
+				<div>
+					<br/>
+					<br/>
+					<!-- email -->
+					<div class='heading' >
+						<%= image_tag "email_orange.png", :size => "25x25",  :alt => "", :class => '' %>
+						Email:
+					</div>
+						<div  style='position:relative; top:5px; left:34px'>
+							<a href="mailto:info@mearsofficeinteriors.co.uk?subject=Enquiry for Mears Office Interiors.">info@mearsofficeinteriors.co.uk</a>
+						</div>
+					</div>
+					<!-- address -->
+					<br/>
+					<br/>
+					<div class='heading' >
+						<%= image_tag "address_contact_us.png", :size => "30x30",  :alt => "" %>
+						<span style='position:relative; top:-5px'>Address:</span>
+					</div>
+						<div  style='position:relative; top:3px; left:37px'>
+							51 Church Lane<br/>Rickmansworth<br/>Hertfordshire<br/>WD3 8PT
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+<%= yield %>
+
+<%= image_tag "line_across.png",:size => "900x4", :alt => "", :class => 'line_across_bottom_2_footer' %>
+
+<div class='footer'>
+	<div class='company_details left'>
+		<h4>Company Details:</h4>
+		55 amber lane<br/>
+		Bassingstoke<br/>
+		Greator London<br/>
+		KT124UY<br/>
+</div>
+	<h4 class='connect_heading left'>Connnect with us:</h4>
+	<h4 class='contacts_footer'>Get in touch:</h4>
+	<div id='social_network_links'>
+	
+		<span><a href='http://www.facebook.com'><%= image_tag "facebook.png", :size => "35x35", :alt => "", :class => 'line_across_bottom_2_footer' %></a></span>
+		<span><a href='http://www.linkedin.com'><%= image_tag "linkedin.png", :size => "35x35",  :alt => "", :class => 'line_across_bottom_2_footer' %></a></span>
+		<span><a href='http://www.delicious.com'><%= image_tag "delicious.png", :size => "35x35",  :alt => "", :class => 'line_across_bottom_2_footer' %></a></span>
+		<span><a href='http://www.twitter.com'><%= image_tag "twitter.png", :size => "35x35",  :alt => "", :class => 'line_across_bottom_2_footer' %></a></span>
+		<div><%= image_tag "telephone_yellow.png", :size => "25x25",  :alt => "", :class => 'telepphone_footer right' 'line_across_bottom_2_footer' %><span id='contact_number_text'> 0125 888 796</span></div>
+		<div><%= image_tag "email_orange.png", :size => "25x25",  :alt => "", :class => 'email_footer' %><span id='email_text' >			<a href="mailto:info@mearsofficeinteriors.co.uk?subject=Enquiry for Mears Office Interiors.">info@mearsofficeinteriors.co.uk</a></span></div>
+	</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+<div id='legal'>
+	<a href='#t_and_c' id='terms_and_conditions'>Terms and Conditions</a> |
+	<a href='#privacy_form' id='privacy' >Privacy</a> | Copyright &#169; 2012 Mears Office Interiors
+</div>
+<br/>
+<div style='display:none'>
+	<div id='t_and_c'>
+		<h2>TERMS AND CONDITIONS for www.mearsofficeinteriors.com</h2>
+		<pre>
+These terms and conditions govern your use of our website. Our terms have been provided 
+and approved by legal documents provider LegalCentre.co.uk. Please read the terms in full 
+before you use this Website. If you do not accept these terms, please do not use this Website. 
+Using the Website implies that you accept these terms.   We do occasionally update these terms
+so please refer back to them in the future.
+
+Site Access 
+1.1 You will be able to access the majority of this Website without having to register 
+any details with us. 
+
+USE OF WEBSITE
+1.2 You are permitted to use our website for your own purposes and to print and download 
+material from this Website provided that you do not modify any content without our consent. 
+Material on this website must not be republished online or offline without our permission.
+1.3 The copyright and other intellectual property rights in all material on this Website 
+are owned by us or our licensors and must not be reproduced without our prior consent. 
+1.4 Subject to paragraph 1.2, no part of this Website may be reproduced without our prior 
+written permission.
+  
+SITE UPTIME
+1.5 We take all reasonable steps to ensure that this Website is available 24 hours every day, 
+365 days per year. However, websites do sometimes encounter downtime due to server and, other 
+technical issues. Therefore we will not be liable if this website is unavailable at any time.
+1.6 This Website may be temporarily unavailable due to issues such as system failure, maintenance 
+or repair or for reasons beyond our control. Where possible we will try to give our visitors 
+advance warning of maintenance issues but shall not be obliged to do so.
+ 
+VISITOR CONDUCT
+1.7 With the exception of personally identifiable information, the use of which is covered 
+under our Privacy Policy, any material you send or post to this Website shall be considered 
+non-proprietary and not confidential. Unless you advise to the contrary we will be free to copy, 
+disclose, distribute, incorporate and otherwise use such material for any and all purposes.
+  
+1.8 When using this website you shall not post or send to or from this Website any material:
+(a) for which you have not obtained all necessary consents;
+(b) that is discriminatory, obscene, pornographic, defamatory, liable to incite racial hatred, 
+in breach of confidentiality or privacy, which may cause annoyance or inconvenience to others, 
+which encourages or constitutes conduct that would be deemed a criminal offence, give rise to a 
+civil liability, or otherwise is contrary to the law in the United Kingdom; 
+(c) which is harmful in nature including, and without limitation, computer viruses, Trojan horses, 
+	corrupted data, or other potentially harmful software or data. 
+1.9 [We will fully co-operate with any law enforcement authorities or court order requiring us 
+to disclose the identity or other details of any person posting material to this website in 
+breach of Paragraph 1.8.]
+
+LINKS TO AND FROM OTHER WEBSITES
+
+1.10 Any links to third party websites located on this Website are provided for your 
+convenience only.  We have not reviewed each third party website and have no responsibility for 
+such third party websites or their content.  We do not endorse the third party websites or make 
+representations about them or any material contained in them.  If you choose to access a third party 
+website linked to from this Website, it is at your own risk.
+1.11 If you would like to link to this Website, you may only do so on the basis that you link to, 
+but do not replicate, any page on this Website, and subject to the following conditions:
+(a) you do not in any way imply that we are endorsing any services or products unless this has been 
+specifically agreed with us;
+(b) you do not misrepresent your relationship with us or present any false information about us;
+(c) you do not link from a website that is not owned by you; and 
+(d) your website does not contain content that is offensive,  controversial, infringes any intellectual 
+property rights or other rights of any other person or does not comply in any way with the law in 
+the United Kingdom.
+1.12 If you choose to link to our website in breach of Paragraph 5.2 you shall fully indemnify us for 
+any loss or damage suffered as a result of your actions. 
+
+DISCLAIMER
+1.13 We take all reasonable steps to ensure that the information on this Website is correct. 
+However, we do not guarantee the correctness or completeness of material on this Website. 
+We may make changes to the material on this Website at any time and without notice. The material on 
+this Website may be out of date, or on rare occasions incorrect and we make no commitment to ensure 
+that such material is correct or up to date. 
+1.14 The material at this Website is provided without any conditions or warranties of any kind. 
+To the maximum extent permitted by law, we provide access and use of this website on the basis that 
+we exclude all representations, warranties and conditions which but for these Terms may have effect 
+in relation to this Website.  
+
+EXCLUSION OF LIABILITY
+1.15 Neither we nor any other party (whether or not involved in producing, maintaining or 
+delivering this Website), shall be liability or  responsible for any kind of loss or damage that may 
+result to you or a third party as a result of your or their use of our website. This exclusion shall 
+include servicing or repair costs and, without limitation, any other direct, indirect or consequential 
+loss, and whether in tort or contract or otherwise in connection with this Website. 
+1.16 Nothing in these Terms shall exclude or limit liability for (i) death or personal injury caused 
+by negligence (as defined by the Unfair Contract Terms Act 1977); (ii) fraud; (iii) misrepresentation 
+as to a fundamental matter; or (iv) any liability which cannot be excluded or limited under the law of 
+the United Kingdom.
+
+GOVERNING JURISDICTION
+This Legal Notice shall be governed by and construed in accordance with English law. Any dispute(s) 
+arising in connection with this Legal Notice are subject to the exclusive jurisdiction of 
+England and Wales.
+			
+			
+	DETAILS
+	Business’s name is:
+	Business address is:
+	VAT registration is:    
+	Contact details are: 
+			
+		</pre>
+	</div>
+</div>
+
+<div style="display:none">
+	<div id='privacy_form'>
+		<h2>PRIVACY POLICY for www.mearsofficeineteriors.co.uk</h2>
+<pre>
+At Mears Office Interiors we are committed to ensuring and protecting your privacy at any 
+time you are on our website or communicate electronically with our personnel. This Privacy 
+Policy has been provided and approved by the employment contracts and internet contracts experts 
+at LegalCentre.co.uk.
+
+Our Privacy Policy is contained below and provides a detailed explanation as to how we may 
+use your personal information provided to us or any we collect through legal means.
+Updates of our Privacy Policy are completed frequently, thus you should peruse this Policy habitually.
+
+1. Information We Collect from You
+Data can be collected and processed when our website is in operation by you. 
+The following are approved methods of collection:
+
+1.1. If you register for information or complete a purchase, by filling out a form we 
+can collect the information provided.
+1.2. Traffic data, weblogs, location data, and any other communication can be collected.
+These details come from your visit to our site and any resource tools you use while on the site.
+1.3. Any communication on our website or to personnel allows us to collect information.
+
+2. Use of Cookies
+Circumstances may arise when we may need to gather information about your computer to help 
+provide appropriate services or products to you.  The data gathered is solely statistical data, 
+which may be shared with advertisers. The facts collected about you are statistical only. 
+No identifying information will be shared about our visitors and how they made use of our site.
+No personal details will ever be shared. Cookies are used to collect general online usage by using
+a cookie file. If used this cookie file is downloaded without prompting. It will be placed on your 
+hard drive with information transferred to the hard drive allowing the cookies to be used 
+for data collection. A cookie is used to improve any services/ products, or overall website 
+characteristic we offer you. Any computer has the option to decline cookies.  Your web browser options
+include an “enable” button to decline cookies. It is imperative that you understand by declining cookies
+you may be limiting your access to sections of our website. If our advertisers use cookies it will result 
+from a click on their advertisement, and we do not have control over their cookies if used. 
+
+3. Use of Your Information
+Information stored and collected about you allows us to improve our services or products for you.
+Added to this parameter, we may use your information for the following purposes:
+
+3.1. Any commitment we make on a contracted basis.
+3.2. If information is requested from our website concerning services or products offered,
+we may use your data. Products or services which may be of interest to you can also deem a
+communication from us, if permission has been granted.
+3.3. Notification re- changes or improvements may be sent to you in regards to product or
+service changes that could affect our service to you.
+3.4. Existing customers can be contacted on the topic of goods or services related to a
+previous sale, if we feel you might be interested in these additional topics.
+3.5. Added use of your data may include permission for third parties to use your data. 
+This permission would be granted by you in regards to unrelated products or services 
+that may be in your interests.  We or third parties can only contact you in regards to this 
+information if consent has been provided for information collection.
+3.6. Third party contact or communications from our website, as a new customer, is only made
+if you have granted us permission. These communications are only offered for information you 
+consented to and no other unrelated information.
+3.7. Data that you do not want us to use or third parties to use can be withheld, once consent
+has been given regarding our collection of your data.  We will always provide you with an 
+opportunity to decline communications and our or third party data usage.
+3.8. Identifiable data, which could be used to disclose who you are, is never shared. 
+We only provide statistical related data about our visitors to third parties like advertisers 
+to ensure your privacy.
+
+4. Storing Your Personal Data
+4.1. Outside of the European Economic Area are places for storing and processing data we 
+collect from you. We may take advantage of these outside areas, allowing a staff to process 
+data collected from you. These processors may work for our suppliers. The transfer of this 
+data may include processing and completing your order on our site, such as utilising your
+payment information or offering support services. We take all reasonable processes to ensure 
+your data is secure and in agreement with our Privacy Policy as outlined here.
+
+4.2. Secured servers are used by our company to ensure proper data storage. Information on 
+transactions is kept encrypted for safety measures.
+
+4.3. Transmission of data on the internet can never be ultimately secure. We do not and cannot 
+guarantee security of information collected electronically or transmitted; however, we take all 
+necessary steps to provide the best security available. As a result of our inability to guarantee 
+safety, you are submitting information to us at your own risk.
+Where needed a password may be necessary to access areas of our site. You are responsible for the 
+safety and confidentiality of the password you generate.
+
+5. Disclosing Your Information
+5.1.Personal information to third parties may be disclosed:
+5.2. This disclosure occurs when we sell all or a section of our business or assets to a third party.
+5.2.1. Personal information can be offered to any member of our company, such as subsidiaries, 
+holding companies and their subsidiaries only if deemed appropriate.
+5.2.2. Legal requirements may mean a sharing of your information.
+5.2.3. Lowering credit risk and fraud protection may result in information disclosure.
+
+6. Third Party Links
+Links might be discovered on our site that belongs to third parties.  Any third party website on 
+our site has a privacy policy. You should check their terms. We do not accept liability or 
+responsibility for their privacy policies, based on our lack of control over these third party links.
+
+7. Access to Information
+The Data Protection Act 1998 was established to govern online electronic communications. 
+The act gives you access to any data we have about you.  To gain access to this information a 
+small fee of £10 is needed. This fee allows us to process your request by covering our costs. 
+Contact information is given below, which should be used to gain details about information we hold on you. 
+
+8.Contacting Us
+We welcome and hope you do not hesitate to make any queries, comments or requests you may 
+have regarding this Privacy Policy. Please contact us at info@mearsofficeinteriors.co.uk
+</pre>
+	</div>
+</div>
+</body>
+</html>
