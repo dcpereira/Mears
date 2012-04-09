@@ -306,3 +306,10 @@ footer_contact_us{
 clear_left{
 	clear:left;
 }
+
+
+
+/* border for link images removed in IE*/
+a {outline : none;}
+a img {outline : none;}
+img {border : 0;}
