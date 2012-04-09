@@ -320,3 +320,8 @@ a:link {color: DimGrey; text-decoration: underline; }
 a:active {color: #0000ff; text-decoration: underline; }
 a:visited {color: #008000; text-decoration: underline; }
 a:hover {color: orange; text-decoration: none; }
+
+li a:hover {color: DimGrey; text-decoration: none; }
+li a:link {color: DimGrey; text-decoration: none; }
+li a:active {color: DimGrey; text-decoration: none; }
+li a:visited {color: DimGrey; text-decoration: none; }
