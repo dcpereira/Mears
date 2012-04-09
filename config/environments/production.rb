@@ -1,4 +1,4 @@
-Rails3test::Application.configure do
+Mears::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # if !Rails.env.development? && !Rails.env.test?
