@@ -41,7 +41,7 @@ $(document).ready(function() {
 		'padding' : '40',
 		'autoDimensions' : false,
 		'width' : '380',
-		'height' : '500',
+		'height' : '450',
 		'scrolling' : 'auto',
 		'speedIn'		:	300, 
 		'speedOut'		:	300, 
