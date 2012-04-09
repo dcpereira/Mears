@@ -24,5 +24,3 @@ production:
   database: temp_production
   username: root
   password:
-  # pool: 5
-  # timeout: 5000
