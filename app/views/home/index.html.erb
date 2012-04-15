@@ -48,6 +48,13 @@
 </div>
 
 
+<script>
+$(document).ready(function() {
 
+	//#################### start of browser version detection ##############################
+		if($.browser.msie && parseInt($.browser.version) < 7 ) window.location.href="<%= Rails.root+'public'+'browser_update' %>";
+	//#################### end of browser version detection ############################# });
+
+</script>
 
 
