@@ -13,12 +13,11 @@
 // = require jquery_ujs
 //= require_tree .
 
+// 
+
+
 
 $(document).ready(function() {
-	$('#pic_slide').cycle({ 
-	    fx:    'fade', 
-	    speed:  1000 
-	 });
 	
 	$("a#swap-about").fancybox({
 			'transitionIn'	:	'fade',

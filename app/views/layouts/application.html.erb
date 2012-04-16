@@ -31,12 +31,12 @@
 	</div>
 	<div id='main_slider_background_border' >
 		<div id="pic_slide" class="pics " style="position: relative;">
-		<%= image_tag "slider_images/image1.jpg",  :size => "900x354", :alt => "Image1", :class => 'Image' %>
-		<%= image_tag "slider_images/image2.jpg",  :size => "900x354", :alt => "Image2", :class => 'Image' %>
-		<%= image_tag "slider_images/image3.jpg",  :size => "900x354", :alt => "Image3", :class => 'Image' %>
-		<%= image_tag "slider_images/image4.jpg",  :size => "900x354", :alt => "Image4", :class => 'Image' %>
-		<%= image_tag "slider_images/image5.jpg",  :size => "900x354", :alt => "Image5", :class => 'Image' %>
-		<%= image_tag "slider_images/image6.jpg",  :size => "900x354", :alt => "Image6", :class => 'Image' %>
+		<span><%= image_tag "slider_images/image1.jpg",  :size => "900x354", :alt => "Image1" %></span>
+		<span><%= image_tag "slider_images/image2.jpg",  :size => "900x354", :alt => "Image2" %></span>
+		<span><%= image_tag "slider_images/image3.jpg",  :size => "900x354", :alt => "Image3" %></span>
+		<span><%= image_tag "slider_images/image4.jpg",  :size => "900x354", :alt => "Image4" %></span>
+		<span><%= image_tag "slider_images/image5.jpg",  :size => "900x354", :alt => "Image5"%></span>
+		<span><%= image_tag "slider_images/image6.jpg",  :size => "900x354", :alt => "Image6"%></span>
 		</div>
 	</div>
 	
@@ -352,3 +352,10 @@ have regarding this Privacy Policy. Please contact us at info@mearsofficeinterio
 </div>
 </body>
 </html>
+
+<script>
+	$('#pic_slide').cycle({ 
+		    fx:    'fade', 
+		    speed:  1000 
+		 });
+</script>
